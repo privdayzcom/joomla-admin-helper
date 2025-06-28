@@ -9,8 +9,6 @@
 
 ---
 
-## 🔥 Screenshot
-
 <p align="center">
   <img src="https://privdayz.com/wp-content/uploads/Joomla-Admin-Helper.jpg" alt="Joomla Admin Helper Backdoor UI preview" width="780">
 </p>
