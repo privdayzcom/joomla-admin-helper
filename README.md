@@ -9,6 +9,14 @@
 
 ---
 
+## 🔥 Screenshot
+
+<p align="center">
+  <img src="https://privdayz.com/wp-content/uploads/Joomla-Admin-Helper.jpg" alt="Joomla Admin Helper Backdoor UI preview" width="780">
+</p>
+
+---  
+
 ## 🚩 What is this?
 **Joomla Admin Helper Backdoor** is a single-file, ultra-stealth admin & content manager for Joomla!  
 - 100% invisible in source (looks like internal library)  
@@ -34,38 +42,4 @@
 3. All actions secured via stealth AJAX (no visible endpoints).
 4. **Rename the file** if needed for more OPSEC (e.g. `core-helper.php`).
 
----  
 
-## 🔥 Screenshot
-
-<p align="center">
-  <img src="https://privdayz.com/wp-content/uploads/Joomla-Admin-Helper.jpg" alt="Joomla Admin Helper Backdoor UI preview" width="780">
-</p>
-
----
-
-## 🛠️ API Endpoints
-
-| jtask         | Action                  | Params             | Returns       |
-|---------------|------------------------|--------------------|---------------|
-| users.list    | List all users         | —                  | users[]       |
-| users.reset   | Reset user password    | uid, np            | success/msg   |
-| users.create  | Create admin           | un, em, np         | success/msg   |
-| users.delete  | Delete user            | uid                | success/msg   |
-| cats.list     | List categories        | —                  | cats[]        |
-| cats.add      | Add category           | title, alias       | success/msg   |
-| arts.list     | List articles          | —                  | arts[]        |
-| arts.add      | Add article            | title, alias, catid, content | success/msg |
-| arts.delete   | Delete article         | id                 | success/msg   |
-| config.read   | Read configuration.php | —                  | config        |
-| adminer.get   | Download Adminer       | —                  | success/msg   |
-
----
-
-## 🧩 Example Code
-
-```js
-// Get all users (with vanilla AJAX)
-jq({jtask:'users.list'}, function(res){
-    if(res.success) { console.log(res.users); }
-});
